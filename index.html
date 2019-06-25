@@ -23,25 +23,18 @@
   </section>
 
   <section class="section">
-    <div class="container">
-      <p class="button is-info fullwidth" onClick="random()">占う</p>
-      <div class="box has-text-centered">
-        <span id="omikuji" class="has-text-centered is-outlined">結果</span>
-      </div>
+    <form><input type="button" value="占う" onClick="random()">
+      
+    
+    <div class="box has-text-centered">
+      <span id="omikuji" class="has-text-centered is-outlined">結果</span>
     </div>
+    </form>
   </section>
-
-  <footer class="footer">
-    <div class="content has-text-centered">
-      <p>
-        このサイトは<a href="https://bulma.io">Bulma</a>を利用しています。
-      </p>
-    </div>
-  </footer>
 
   <script type="text/javascript">
     function random() {
-      let rand = Math.floor(Math.random() * 5); //おみくじの目の生成
+      var rand = Math.floor(Math.random() * 5); //おみくじの目の生成
       if (rand == 0) mag = "大吉";
       if (rand == 1) mag = "中吉";
       if (rand == 2) mag = "小吉";
@@ -50,6 +43,16 @@
       document.getElementById("omikuji").innerHTML = msg; //おみくじの目の生成
     }
   </script>
+
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        
+      </p>
+    </div>
+  </footer>
+
+
 
 </body>
 
