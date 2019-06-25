@@ -22,27 +22,20 @@
     </div>
   </section>
 
-  <section class="section">
-    <form><input type="button" value="占う" onClick="random()">
-      
-    
-    <div class="box has-text-centered">
-      <span id="omikuji" class="has-text-centered is-outlined">結果</span>
-    </div>
-    </form>
-  </section>
+<form><input type="button" value="おみくじ" onClick="random()"> 
+<span id="omikuji">表示場所</span></form>
 
-  <script type="text/javascript">
-    function random() {
-      var rand = Math.floor(Math.random() * 5); //おみくじの目の生成
-      if (rand == 0) mag = "大吉";
-      if (rand == 1) mag = "中吉";
-      if (rand == 2) mag = "小吉";
-      if (rand == 3) mag = "吉";
-      if (rand == 4) mag = "凶";
-      document.getElementById("omikuji").innerHTML = msg; //おみくじの目の生成
-    }
-  </script>
+<script type="text/javascript">
+function random() {
+var rand = Math.floor( Math.random() * 5) ; //おみくじの目の生成
+        if (rand == 0) msg = "大吉";
+	if (rand == 1) msg = "中吉";
+	if (rand == 2) msg = "小吉";
+	if (rand == 3) msg = "吉";
+	if (rand == 4) msg = "凶";
+document.getElementById("omikuji").innerHTML = msg; //おみくじの目の出力
+}
+</script>
 
   <footer class="footer">
     <div class="content has-text-centered">
